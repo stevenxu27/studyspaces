@@ -59,6 +59,7 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   background-color: var(--dark-color);
   color: #ff6f22;
 }
@@ -154,6 +155,12 @@ footer {
   border-radius: 100px;
   box-shadow: 0 20px 15px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.8s ease-in-out 1s forwards;
+}
+
+.search-bar:hover {
+  cursor: text;
+  background-color: var(--dark-cream);
+  color: #ff6f22;
 }
 
 .search-button {
