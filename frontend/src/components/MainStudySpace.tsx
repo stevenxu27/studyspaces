@@ -8,7 +8,7 @@ export default function MainStudySpace(props) {
             <h4>{props.name}</h4>
             <p>{props.desc}</p>
         </div>
-        <button>Go</button>
+        <button className="orange-button">Go</button>
     </div>
   );
 }
