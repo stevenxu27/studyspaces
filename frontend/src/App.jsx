@@ -1,17 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Landing from './Landing';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Landing from './Landing'; // Import your components
 // import About from './About';
 // import Contact from './Contact';
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={Landing} />
-        {/* <Route path="/search" component={Search} />
-        <Route path="/view-building" component={ViewBuilding} /> */}
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
     </Router>
   );
 }
