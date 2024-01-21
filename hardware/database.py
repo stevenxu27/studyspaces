@@ -35,9 +35,9 @@ def add_database(table_id, location, is_full):
 
     #generate some shit
     now = datetime.now()
-    random_battery = [random.randint(10, 99)/100 for _ in range(3)]
-    random_pop = [random.randint(10, 99)/100 for _ in range(3)]
-    random_totalusers = [random.randint(0, 99) for _ in range(3)]
+    random_battery = random.randint(10, 99)/100
+    random_pop = random.randint(10, 99)/100
+    random_totalusers = random.randint(0, 99)
         
     table_0 = {
         #"_id" : "U1IT00002",
@@ -45,9 +45,9 @@ def add_database(table_id, location, is_full):
         "last_occupied" : now,
         "table_id" : table_id,
         "location" : location,
-        "battery" : random_battery[0],
-        "popularity" : random_pop[0],
-        "total_users" : random_totalusers[0],
+        "battery" : random_battery,
+        "popularity" : random_pop,
+        "total_users" : random_totalusers,
         "is_full" : is_full
     }
 

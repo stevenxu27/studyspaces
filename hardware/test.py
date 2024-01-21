@@ -1,15 +1,12 @@
-# Generate table IDs from 'A00' to 'A19'
-table_ids = [f'A{i:02d}' for i in range(20)]
-
-# Print the generated table IDs
-#print(table_ids)
+#A99 = Set as always green
+#A14 = Biggest test table
 
 from database import add_database
 from database import edit_database
 
-
-table_id = "A00"
 location = "IKB"
 is_full = False
 
-edit_database(table_id, location, is_full)
+location="IKB"
+
+edit_database("A14", location, False)

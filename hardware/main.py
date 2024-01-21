@@ -31,5 +31,5 @@ counter = 0
 while True:
     check_table(table_id)
     counter+=1
-    print("This program has ran " + counter + " times")
+    print("This program has ran " + str(counter) + " times")
     sleep(20)

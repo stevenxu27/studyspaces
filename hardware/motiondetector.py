@@ -73,6 +73,3 @@ def is_motion(duration_seconds):
     cv2.destroyAllWindows()
 
     return len(time) > 0  # Return true if motion was detected, false otherwise
-
-motion = is_motion(10)
-print(motion)
