@@ -60,6 +60,17 @@ const Landing = () => {
                 <img className="icon" src="./images/arrow-right-svgrepo-com.svg"/>
             </button>
           </div>
+          <div className="realFooter">
+            <span>
+              <h3>StudyScout</h3>
+              <button className="landing-search-bar">
+                Subscribe to our newsletter...
+                <RedirectButton icon="../images/search-alt-svgrepo-com.svg"/>
+              </button>
+            </span>
+            
+            <p>&copy; 2024 StudyScout. All Rights Reserved.</p>
+          </div>
         </footer>
       </div>
     </>
