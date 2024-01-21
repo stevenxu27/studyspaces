@@ -16,7 +16,7 @@ from time import sleep
 
 def check_table(table_id):
     location = "IKB"
-    is_full = is_motion(5)
+    is_full = is_motion(10)
     edit_database(table_id, location, is_full)
     if is_full:
         print("Table " + table_id + " is Full")
@@ -25,11 +25,11 @@ def check_table(table_id):
 
 
 #table_id remains static for each raspberry pi
-table_id = "A00"
+table_id = "A14"
 counter = 0
 
 while True:
     check_table(table_id)
     counter+=1
     print("This program has ran " + str(counter) + " times")
-    sleep(20)
+    sleep(5)
