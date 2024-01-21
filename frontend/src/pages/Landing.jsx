@@ -41,10 +41,11 @@ const Landing = () => {
           </div>
         </div>
         <footer>
+          <img id="backgroundImg"/>
           <div className="titleSection">
             <LandingTitle title="Begin studying" orangeTitle="now." desc="Find study spaces from the comfort of your home." />
             <button className="listingButton" onClick={handleViewBuildingClick}>
-                <h6>Check availability</h6>
+                <h6>Start now</h6>
                 <img className="icon" src="./images/arrow-right-svgrepo-com.svg"/>
             </button>
           </div>

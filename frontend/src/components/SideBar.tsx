@@ -6,7 +6,7 @@ const SideBar = () => {
     return (
         <div id="sideBar">
             <img id="profilePicture" src="./images/viewBuildings/RW_Kel_Neutral_29.webp"/>
-            <h6>Kel</h6>
+            <h6>Kel, lv.14</h6>
             <p>Saved spots</p>
             <SavedSpotComponent name="Irving K Barber" distance="700m"/>
             <SavedSpotComponent name="Irving K Barber" distance="120m"/>
