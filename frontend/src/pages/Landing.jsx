@@ -21,14 +21,14 @@ const Landing = () => {
       <div id="background">
         <div className="titleSection">
           <LandingTitle title="Find your" orangeTitle="space." desc="Find study spaces from the comfort of your home." />
-          <SearchBar query="Where would you like to study today?" onClickPath="/view-building"/>
+          <SearchBar query="Where would you like to study today?" onClickPath="/main"/>
         </div>
         <div id="mainSection">
           <MainTitle title="Popular" orangeTitle="study spaces" endTitle="near you:" desc="View the most popular study spaces and make it convenient." />
           <div id="mainSpacesContainer">
             <MainStudySpace img="../images/UBC_Irving_5-scaled.jpg" name="Irving K Barber Building" desc="The Irving K Barber Learning Centre provides a world-class facility for students and community members to study and collaborate." />
-            <MainStudySpace img="../images/UBC_Irving_5-scaled.jpg" name="Irving K Barber Building" desc="The Irving K Barber Learning Centre provides a world-class facility for students and community members to study and collaborate." />
-            <MainStudySpace img="../images/UBC_Irving_5-scaled.jpg" name="Irving K Barber Building" desc="The Irving K Barber Learning Centre provides a world-class facility for students and community members to study and collaborate." />
+            <MainStudySpace img="../images/ubc-irving-k-barber-learning-centre_23048531806_o-min.jpg" name="Irving K Barber Building" desc="The Irving K Barber Learning Centre provides a world-class facility for students and community members to study and collaborate." />
+            <MainStudySpace img="../images/41216872_lZbFvgTKh_3SPzP2KgKXa2KeTHeX7TAhFKQ-lYFSYX8.jpg" name="Irving K Barber Building" desc="The Irving K Barber Learning Centre provides a world-class facility for students and community members to study and collaborate." />
           </div>
           <MainTitle title="From the comfort of your " orangeTitle="home" desc="View the most popular study spaces and make it convenient." />
           <img className="mainImage" src="./images/landing/mapGraphic.png" maxWidth="700px" />
