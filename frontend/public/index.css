@@ -96,7 +96,7 @@ nav {
   position: relative;
   background-color: var(--background-color);
   height: 100vh;
-  z-index: -200;
+  z-index: 0;
 }
 
 .titleSection {

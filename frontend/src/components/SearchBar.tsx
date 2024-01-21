@@ -7,8 +7,7 @@ const SearchBar = (props) => {
         <>
             <button className="search-bar">
                 {props.query}
-                <RedirectButton path={props.onClickPath} icon="../images/search-alt-svgrepo-com.svg">
-                </RedirectButton>
+                <RedirectButton path={props.onClickPath} icon="../images/search-alt-svgrepo-com.svg"/>
             </button>
         </>
     );
