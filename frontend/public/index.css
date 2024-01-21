@@ -1,0 +1,255 @@
+:root {
+  --primary-color: #ff6f22;
+  --secondary-color: #663d3b;
+  --background-color: #edcfb8;
+  --dark-color: #2c1514;
+  --light-cream: #fffcfa;
+  --dark-cream: #faf3ee;
+}
+
+body {
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-family: "Oxygen", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: var(--dark-color);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin-top: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+span {
+  display: inline-flex;
+}
+
+button {
+  background-color: #ff6f22;
+  color: #fffcfa;
+  padding: 16px;
+  border: none;
+  border-radius: 100px;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+button:hover {
+  background-color: var(--dark-color);
+  color: #ff6f22;
+}
+
+.orange-button {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+nav {
+  position: sticky;
+  background-color: #2c1514;
+  color: var(--light-cream);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#background {
+  background-color: var(--background-color);
+  background-image: url("./images/landing/buildings.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+footer {
+  z-index: 100;
+  background-color: var(--background-color);
+}
+
+#mainSection {
+  background-color: var(--light-cream);
+  padding: 40px;
+  margin-bottom: 80px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#mainSpacesContainer {
+  display: flex;
+  margin-bottom: 40px;
+  align-self: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 70vw;
+}
+
+.landingTitle {
+  opacity: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out 0.4s forwards;
+}
+
+.mainTitle {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orange-text {
+  color: var(--primary-color);
+  padding-left: 1rem;
+}
+
+.search-bar {
+  opacity: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #9e9e9e;
+  text-align: left;
+  text-indent: 26px;
+  width: 600px;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease-in-out 1s forwards;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  right: 0;
+}
+
+.end-title {
+  margin-left: 1rem;
+}
+
+.studySpaceContainer {
+  z-index: 1;
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.25);
+}
+
+.studySpaceContainer div {
+  z-index: 1;
+  margin: 1.5rem;
+}
+
+.studySpaceContainer img {
+  z-index: 1;
+  border-radius: 30px;
+}
+
+.backgroundContainer {
+  z-index: 0;
+  left: -1rem;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+}
+
+.locPathLeft {
+  z-index: 0;
+  position: absolute;
+  left: 10px;
+  top: 300px;
+}
+
+.locPathRight {
+  z-index: 0;
+  position: absolute;
+  right: 0px;
+  top: 800px;
+}
+
+.locPathBottom {
+  z-index: 0;
+  position: absolute;
+  left: 300px;
+  bottom: -900px;
+}
+
+.bubbles {
+  max-width: 60vw;
+  z-index: -5;
+  position: absolute;
+  left: 200px;
+  top: 820px;
+}
+
+.mainImage {
+  z-index: 100;
+  max-width: 60vw;
+  margin-left: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
