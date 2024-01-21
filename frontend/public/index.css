@@ -161,8 +161,8 @@ footer .titleSection {
 }
 
 iframe {
-  position: absolute;
-  width: 360px;
+  position: fixed;
+  width: 23vw;
   height: 500px;
   border: 0;
   top: 175px;
