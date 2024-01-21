@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ListingComponent() {
+export default function ListingComponent(props) {
   return (
     <div className="listingComponent">
         <img src="./images/UBC_Irving_5-scaled.jpg"/>
