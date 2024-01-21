@@ -168,9 +168,13 @@ iframe {
     rgba(102, 61, 59, 0)
   );
   opacity: 1;
+  z-index: 0;
 }
 
 #infoContainer {
+  position: relative;
+  top: 400px;
+  background-color: #fffcfa;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -178,6 +182,17 @@ iframe {
   border-radius: 30px;
   border: 0;
   height: 600px;
+}
+
+#infoContainer h4 {
+  margin-block: 16px;
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.partyImg {
+  margin-left: -10px;
+  width: 100%;
 }
 
 .backIcon {
@@ -193,11 +208,13 @@ iframe {
 }
 
 .infoContainerRight {
+  margin-top: 40px;
   width: 360px;
   height: 500px;
 }
 
 .infoContainerLeft {
+  margin-top: 40px;
   width: 320px;
   height: 500px;
 }
@@ -311,6 +328,7 @@ iframe {
 }
 
 .locationDesc h6 {
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
@@ -424,7 +442,13 @@ iframe {
 }
 
 .mainSpan .icon {
+  z-index: 1;
   padding-inline: 20px;
+}
+
+.mainSpan h4 {
+  color: #fffcfa;
+  z-index: 1;
 }
 
 .mainTitle {
@@ -592,6 +616,7 @@ iframe {
 }
 
 .infoDescription p {
+  color: #663d3b;
   margin-top: 12px;
 }
 
