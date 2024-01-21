@@ -90,10 +90,6 @@ while True:
 			time.append(datetime.now()) 
 		break
 
-	#reset frame
-	elif key == ord('r'):
-    	print("reset frame")
-    	static_back = None
 
 # Appending time of motion in DataFrame 
 for i in range(0, len(time), 2): 

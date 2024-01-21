@@ -29,7 +29,7 @@ if __name__ == "__main__":
    dbname = get_database()
 
 
-def add_database(is_empty):
+def add_database(table_id, location, is_full):
     dbname = get_database()
     collection_name = dbname["tables"]
 
@@ -38,18 +38,44 @@ def add_database(is_empty):
     random_battery = [random.randint(10, 99)/100 for _ in range(3)]
     random_pop = [random.randint(10, 99)/100 for _ in range(3)]
     random_totalusers = [random.randint(0, 99) for _ in range(3)]
-
+        
     table_0 = {
         #"_id" : "U1IT00002",
         "last_updated" : now,
         "last_occupied" : now,
-        "table_id" : "A0",
-        "location" : "IKB",
+        "table_id" : table_id,
+        "location" : location,
         "battery" : random_battery[0],
         "popularity" : random_pop[0],
         "total_users" : random_totalusers[0],
-        "is_empty" : is_empty
+        "is_full" : is_full
     }
 
     collection_name.insert_one(table_0)
     #collection_name.insert_many([table_1,table_2])
+    
+def edit_database(table_id, location, is_full):
+    dbname = get_database()
+    collection_name = dbname["tables"]
+
+    #generate some shit
+    now = datetime.now()
+    
+    x = collection_name.find_one({"table_id": table_id, "location":location})
+    last_occupied = x["last_occupied"]
+    
+    if is_full:
+        last_occupied = now
+    
+    my_query = {"table_id": table_id, "location":location}
+    
+    new_values = {
+        "$set": {
+            "is_full": is_full,  # New value for 'is_full'
+            "last_occupied": last_occupied,  # New value for 'last_occupied'
+        }
+    }
+    
+    collection_name.update_one(my_query, new_values)
+    
+        
