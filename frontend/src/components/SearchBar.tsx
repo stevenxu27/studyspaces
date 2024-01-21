@@ -6,7 +6,7 @@ const SearchBar = (props) => {
   
     const handleViewBuildingClick = () => {
       // Navigate to the ViewBuilding page when the button is clicked
-      navigate('/view-building');
+      navigate(props.onClickPath);
     };
     return (
         <>

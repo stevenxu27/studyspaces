@@ -21,7 +21,7 @@ const Landing = () => {
       <div id="background">
         <div className="titleSection">
           <LandingTitle title="Find your" orangeTitle="space." desc="Find study spaces from the comfort of your home." />
-          <SearchBar query="Where would you like to study today?" />
+          <SearchBar query="Where would you like to study today?" onClickPath="/view-building"/>
         </div>
         <div id="mainSection">
           <MainTitle title="Popular" orangeTitle="study spaces" endTitle="near you:" desc="View the most popular study spaces and make it convenient." />
@@ -38,10 +38,6 @@ const Landing = () => {
             <img className="locPathRight" src="./images/landing/locPathRight.png" width="120px" height="auto" />
             <img className="locPathBottom" src="./images/landing/locPathBottom.png" width="180px" height="auto" />
           </div>
-          {/* Use Link to navigate to the ViewBuilding page */}
-          <Link to="/view-building">
-            <button onClick={handleViewBuildingClick}>View Building</button>
-          </Link>
         </div>
       </div>
     </>
