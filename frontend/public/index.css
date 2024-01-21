@@ -215,11 +215,11 @@ footer {
   z-index: 0;
   position: absolute;
   left: 300px;
-  bottom: -800px;
+  bottom: -900px;
 }
 
 .bubbles {
-  max-width: 66vw;
+  max-width: 60vw;
   z-index: -5;
   position: absolute;
   left: 200px;

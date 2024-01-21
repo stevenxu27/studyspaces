@@ -33,13 +33,6 @@ export default function Landing() {
                 </div>
                 
             </div>
-            <footer>
-                <div className="titleSection">
-                    <LandingTitle title="Start studying" orangeTitle="now." desc="Find study spaces from the comfort of your home."/>
-                    <SearchBar query="Where would you like to study today?"/>
-                </div>
-            </footer>
-            
         </div>
         </>
         
