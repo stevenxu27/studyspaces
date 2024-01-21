@@ -232,6 +232,10 @@ footer {
   margin-left: 100px;
 }
 
+.homeName {
+  background-color: transparent;
+}
+
 @keyframes fadeIn {
   from {
     transform: translateY(-60px);
