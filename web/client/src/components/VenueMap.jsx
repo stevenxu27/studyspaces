@@ -54,7 +54,7 @@ const MappedinComponent = () => {
         });
 
         
-        mapView.on(handleFetchData, ({ polygons }) => {
+        mapView.on(E_SDK_EVENT.CLICK, ({ polygons }) => {
           if (polygons.length > 0) {
             mapView.setPolygonColor(polygons[0], "#BF4320");
           } else {
