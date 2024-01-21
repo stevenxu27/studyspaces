@@ -1,5 +1,4 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import NavBar from '../components/NavBar.tsx';
 import SideBar from '../components/SideBar.tsx';
 import MainSection from '../components/MainSection.tsx';

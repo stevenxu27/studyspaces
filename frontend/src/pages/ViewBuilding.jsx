@@ -13,7 +13,7 @@ export default function ViewBuilding() {
             <span>
                 <SideBar/>
                 <MainFloor/>
-                {/* <ChatBar/> */}
+                <ChatBar/>
             </span>
             
         </div>
