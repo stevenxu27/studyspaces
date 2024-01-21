@@ -150,6 +150,17 @@ footer {
   opacity: 0.87;
 }
 
+#chatBar {
+  height: 100vh;
+  top: 40px;
+  right: 0;
+  position: fixed;
+  background-color: #663d3b;
+  color: var(--light-cream);
+  animation: slideInFromLeft 0.8s ease-in-out 0.4s forwards;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
+}
+
 #listingContainer {
   position: absolute;
   top: 180px;
