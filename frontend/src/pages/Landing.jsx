@@ -19,6 +19,7 @@ const Landing = () => {
     <>
       <NavBar />
       <div id="background">
+        <img id="backgroundImg"/>
         <div className="titleSection">
           <LandingTitle title="Find your" orangeTitle="space." desc="Find study spaces from the comfort of your home." />
           <SearchBar query="Where would you like to study today?" onClickPath="/main"/>

@@ -10,6 +10,7 @@
 }
 
 body {
+  background-color: var(--background-color);
   margin: 0;
 }
 
@@ -64,6 +65,7 @@ button {
   padding: 16px;
   border: none;
   border-radius: 100px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
@@ -91,11 +93,10 @@ nav {
 }
 
 #background {
+  position: relative;
   background-color: var(--background-color);
-  background-image: url("./images/landing/buildings.png");
-  background-size: cover;
-  background-position: center;
   height: 100vh;
+  z-index: -200;
 }
 
 .titleSection {
@@ -122,7 +123,9 @@ footer {
 }
 
 #map {
-  min-height: 600px;
+  max-height: 600px;
+  width: 200px;
+  overflow: hidden;
 }
 
 #mainSpacesContainer {
@@ -132,6 +135,17 @@ footer {
   justify-content: center;
   gap: 20px;
   max-width: 70vw;
+}
+
+iframe {
+  position: absolute;
+  width: 360px;
+  height: 500px;
+  border: 0;
+  top: 160px;
+  right: 40px;
+  animation: slideInFromRight 0.8s ease-in-out 1.4s backwards;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 #middleSection {
@@ -171,7 +185,18 @@ footer {
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
 }
 
+#backgroundImg {
+  position: fixed;
+  background-image: url("./images/landing/buildings.png");
+  background-size: cover;
+  background-position: center bottom;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+}
+
 #listingContainer {
+  padding-right: 20px;
   opacity: 0;
   position: absolute;
   top: 180px;
@@ -197,7 +222,7 @@ footer {
 }
 
 .listingDesc {
-  color: #2c1514;
+  color: var(--secondary-color);
 }
 
 .listingDesc span {
@@ -268,6 +293,7 @@ footer {
 }
 
 .landingTitle {
+  margin-top: 100px;
   opacity: 0;
   margin-bottom: 20px;
   display: flex;
@@ -340,6 +366,7 @@ footer {
 }
 
 .studySpaceContainer {
+  background-color: #faf3ee;
   z-index: 1;
   display: flex;
   border-radius: 30px;
