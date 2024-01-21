@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #ff6f22;
+  --secondary-color: #663d3b;
+  --background-color: #edcfb8;
+  --dark-color: #2c1514;
+  --light-cream: #fffcfa;
+  --dark-cream: #faf3ee;
+}
+
+#background {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+}
