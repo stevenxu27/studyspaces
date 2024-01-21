@@ -5,11 +5,14 @@ import SavedSpotComponent from './SavedSpotComponent.tsx';
 const SideBar = () => {
     return (
         <div id="sideBar">
-            <img id="profilePicture"/>
+            <img id="profilePicture" src="./images/viewBuildings/RW_Kel_Neutral_29.webp"/>
             <h6>Kel</h6>
             <p>Saved spots</p>
-            <SavedSpotComponent name="Irvking b asd" distance="gadsdf"/>
-            <SavedSpotComponent name="Irvking b asd" distance="gadsdf"/>
+            <SavedSpotComponent name="Irving K Barber" distance="700m"/>
+            <SavedSpotComponent name="Irving K Barber" distance="120m"/>
+            <SavedSpotComponent name="Irving K Barber" distance="200m"/>
+            <SavedSpotComponent name="Irving K Barber" distance="700m"/>
+            <SavedSpotComponent name="Irving K Barber" distance="100m"/>
         </div>
     );
 };
