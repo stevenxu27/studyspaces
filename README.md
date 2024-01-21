@@ -1,4 +1,4 @@
-# Studyscount
+# Studyscout
 
 ## Description
 
