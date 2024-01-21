@@ -148,9 +148,19 @@ iframe {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
+#mappedInEmbed span {
+  background: linear-gradient(
+    to bottom,
+    rgb(102, 61, 59),
+    rgba(102, 61, 59, 0)
+  );
+  opacity: 1;
+}
+
 #middleSection {
   opacity: 0;
   display: flex;
+  height: fit-content;
   justify-content: center;
   justify-self: center;
   margin-left: 300px;
@@ -197,6 +207,7 @@ iframe {
 
 #listingContainer {
   padding-right: 20px;
+  margin-bottom: 100px;
   opacity: 0;
   position: absolute;
   top: 180px;
@@ -225,10 +236,10 @@ iframe {
   color: var(--secondary-color);
 }
 
-.listingDesc span {
+.locationDesc {
   align-items: center;
   gap: 6px;
-  color: #ff6f22;
+  color: var(--secondary-color);
 }
 
 .listingDesc h6 {
@@ -239,7 +250,7 @@ iframe {
   font-size: 0.8rem;
 }
 
-.listingComponent img {
+.listingComponentImg {
   min-width: 300px;
   height: 200px;
   border-radius: 30px;
@@ -283,13 +294,22 @@ iframe {
   animation: slideInFromLeft 0.8s ease-in-out 0.4s backwards;
   box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
 }
+
+#settings {
+  width: 100%;
+  position: absolute;
+  bottom: 90px;
+  border-radius: 0;
+}
 #sideBar p {
   align-self: flex-start;
+  font-size: 0.8rem;
   margin-inline: 2rem;
+  margin-bottom: 0.5rem;
   opacity: 0.87;
 }
 #sideBar h6 {
-  margin: 1rem;
+  margin: 0.8rem;
 }
 
 .landingTitle {
@@ -305,6 +325,33 @@ iframe {
 .icon {
   width: 20px;
   height: 20px;
+}
+
+#mainFloor {
+  background-color: #fffcfa;
+  margin-top: 50px;
+  width: 840px;
+  height: 100vh;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  margin-left: 300px;
+  margin-right: 410px;
+  padding-bottom: 40px;
+  animation: fadeIn 1s ease-in-out 0.8s forwards;
+}
+
+#mainFloor span {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 840px;
+  height: 80px;
+}
+
+#mainFloor span img {
+  margin-left: 40px;
 }
 
 .mainTitle {
@@ -411,7 +458,7 @@ iframe {
   z-index: 0;
   position: absolute;
   right: 0px;
-  top: 800px;
+  top: 600px;
 }
 
 .locPathBottom {
@@ -459,6 +506,7 @@ iframe {
 
 .savedSpot span {
   color: #ff6f22;
+  margin: 0;
 }
 .savedSpot h6 {
   margin: 0;

@@ -1,11 +1,16 @@
 import React from 'react';
-import MainTitle from './MainTitle.tsx';
-import ListingContainer from './ListingContainer.tsx';
 
 export default function MainFloor() {
   return (
     <div id="mainFloor">
-      
+      <div id="mappedInEmbed">
+        <span>
+          <img className="icon" src="./images/arrow-prev-svgrepo-com.svg"/>
+          <p>Irving K Barber Building</p>
+        </span>
+      </div>
+      <div id="infoContainer">
+        </div>
     </div>
   );
 }

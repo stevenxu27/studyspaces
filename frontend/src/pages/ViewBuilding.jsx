@@ -10,9 +10,12 @@ export default function ViewBuilding() {
         <>
         <NavBar/>
         <div id="background">
-            <SideBar/>
-            <MainFloor/>
-            <ChatBar/>
+            <span>
+                <SideBar/>
+                <MainFloor/>
+                <ChatBar/>
+            </span>
+            
         </div>
         </>
     );
