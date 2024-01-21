@@ -53,6 +53,7 @@ span {
 }
 
 span p {
+  font-size: 0.8rem;
   margin: 0;
 }
 
@@ -149,6 +150,18 @@ iframe {
 }
 
 #mappedInEmbed span {
+  background: linear-gradient(
+    to bottom,
+    rgb(102, 61, 59),
+    rgba(102, 61, 59, 0)
+  );
+  opacity: 1;
+}
+
+.darkShade {
+  position: absolute;
+  height: 60px;
+  width: 100%;
   background: linear-gradient(
     to bottom,
     rgb(102, 61, 59),
@@ -286,6 +299,8 @@ iframe {
 }
 
 .locationDesc {
+  display: flex;
+  height: auto;
   align-items: center;
   gap: 6px;
   color: var(--primary-color);
@@ -386,7 +401,7 @@ iframe {
 
 #mainFloor {
   background-color: #fffcfa;
-  margin-top: 40px;
+  margin-top: 30px;
   width: 840px;
   height: 100vh;
   opacity: 0;
@@ -400,12 +415,16 @@ iframe {
   animation: fadeIn 1s ease-in-out 0.8s forwards;
 }
 
-#mainFloor span {
+.mainSpan {
   display: flex;
   align-items: center;
   gap: 20px;
   width: 840px;
-  height: 80px;
+  height: 60px;
+}
+
+.mainSpan .icon {
+  padding-inline: 20px;
 }
 
 .mainTitle {
@@ -570,6 +589,14 @@ iframe {
 
 .savedSpot img {
   align-self: center;
+}
+
+.infoDescription p {
+  margin-top: 12px;
+}
+
+.infoDescription h4 {
+  margin-top: 6px;
 }
 
 @keyframes fadeIn {
