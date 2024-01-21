@@ -16,7 +16,7 @@ from time import sleep
 
 def check_table(table_id):
     location = "IKB"
-    is_full = is_motion(table_id)
+    is_full = is_motion(5)
     edit_database(table_id, location, is_full)
     if is_full:
         print("Table " + table_id + " is Full")
