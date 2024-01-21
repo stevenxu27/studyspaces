@@ -1,3 +1,5 @@
+@import "~leaflet/dist/leaflet.css";
+
 :root {
   --primary-color: #ff6f22;
   --secondary-color: #663d3b;
@@ -119,6 +121,10 @@ footer {
   overflow: hidden;
 }
 
+#map {
+  min-height: 600px;
+}
+
 #mainSpacesContainer {
   display: flex;
   margin-bottom: 40px;
@@ -173,7 +179,7 @@ footer {
   justify-self: center;
   max-width: 700px;
   flex-direction: column;
-  background-color: #faf3ee;
+  background-color: #fffcfa;
   border-radius: 30px;
   animation: fadeIn 1s ease-in-out 1.8s forwards;
 }
@@ -209,14 +215,15 @@ footer {
 }
 
 .listingComponent img {
-  width: 300px;
+  min-width: 300px;
   height: 200px;
   border-radius: 30px;
+  object-fit: cover;
   padding: 20px;
 }
 
 .listingComponent .icon {
-  width: 24px;
+  min-width: 24px;
   height: 24px;
   padding: 0;
 }
@@ -428,6 +435,7 @@ footer {
 }
 .savedSpot h6 {
   margin: 0;
+  font-weight: 300;
   font-size: 0.8rem;
 }
 
