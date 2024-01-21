@@ -133,10 +133,8 @@ footer {
   display: flex;
   justify-content: center;
   margin-left: 240px;
-  color: var(--light-cream);
   min-width: 700px;
   max-width: 900px;
-  background-color: var(--secondary-color);
   padding-bottom: 40px;
   animation: fadeIn 1s ease-in-out 0.8s forwards;
 }
@@ -157,8 +155,8 @@ footer {
 }
 
 #chatBar {
-  height: 95vh;
-  top: 40px;
+  height: 93%;
+  top: 60px;
   right: 0px;
   position: fixed;
   background-color: #663d3b;
