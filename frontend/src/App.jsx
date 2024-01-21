@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './pages/Landing'; // Import your components
 import ViewBuilding from './pages/ViewBuilding';
 import Listings from './pages/Listings';
-// import Contact from './Contact';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/view-building" element={<ViewBuilding />} />

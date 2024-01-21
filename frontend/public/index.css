@@ -110,14 +110,19 @@ nav {
   height: 84vh;
 }
 footer {
-  z-index: 100;
+  position: relative;
+  top: -30px;
+  z-index: -40;
   background-color: var(--background-color);
+}
+
+footer .titleSection {
+  height: 60vh;
 }
 
 #mainSection {
   background-color: var(--light-cream);
   padding: 40px;
-  margin-bottom: 80px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -361,7 +366,7 @@ iframe {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 6px;
+  padding: 12px;
 }
 .listingButton h6 {
   padding-left: 24px;

@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar.tsx';
 import SearchBar from '../components/SearchBar.tsx';
 import MainTitle from '../components/MainTitle.tsx';
 import MainStudySpace from '../components/MainStudySpace.tsx';
+import RedirectButton from '../components/RedirectButton.tsx';
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -39,6 +40,15 @@ const Landing = () => {
             <img className="locPathBottom" src="./images/landing/locPathBottom.png" width="180px" height="auto" />
           </div>
         </div>
+        <footer>
+          <div className="titleSection">
+            <LandingTitle title="Begin studying" orangeTitle="now." desc="Find study spaces from the comfort of your home." />
+            <button className="listingButton" onClick={handleViewBuildingClick}>
+                <h6>Check availability</h6>
+                <img className="icon" src="./images/arrow-right-svgrepo-com.svg"/>
+            </button>
+          </div>
+        </footer>
       </div>
     </>
   );
