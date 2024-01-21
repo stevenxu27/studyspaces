@@ -5,7 +5,6 @@ import NavBar from '../components/NavBar.tsx';
 import SearchBar from '../components/SearchBar.tsx';
 import MainTitle from '../components/MainTitle.tsx';
 import MainStudySpace from '../components/MainStudySpace.tsx';
-import ScrollFadeIn from '../components/ScrollFadeIn.tsx';
 
 const Landing = () => {
   const navigate = useNavigate();

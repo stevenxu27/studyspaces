@@ -1,10 +1,10 @@
 import React from 'react';
 import RedirectButton from './RedirectButton.tsx';
 
-const SearchBar = (props) => {
+const MenuSearchBar = (props) => {
     return (
         <>
-            <button className="search-bar">
+            <button className="menu-search-bar">
                 {props.query}
                 <RedirectButton path={props.onClickPath} icon="../images/search-alt-svgrepo-com.svg"/>
             </button>
@@ -13,4 +13,4 @@ const SearchBar = (props) => {
 };
     
 
-export default SearchBar;
+export default MenuSearchBar;
