@@ -28,7 +28,7 @@ h1 {
   color: var(--dark-color);
   margin: 0;
   font-family: "Inter", sans-serif;
-  font-size: 3.6rem;
+  font-size: 2.8rem;
 }
 
 h2 {
@@ -132,7 +132,7 @@ footer .titleSection {
 
 #map {
   max-height: 600px;
-  width: 200px;
+  width: 20vw;
   overflow: hidden;
 }
 
@@ -245,6 +245,7 @@ iframe {
 }
 
 #middleSection {
+  width: 55vw;
   opacity: 0;
   display: flex;
   height: fit-content;
@@ -262,6 +263,10 @@ iframe {
   padding-top: 80px;
 }
 
+#middleSection .orange-text {
+  padding-left: 0.5rem;
+}
+
 #middleSection .mainTitle h2 {
   font-size: 2rem;
 }
@@ -273,6 +278,7 @@ iframe {
 
 #chatBar {
   height: 95%;
+  width: 25vw;
   top: 55px;
   right: 0px;
   position: fixed;
@@ -386,7 +392,7 @@ iframe {
   top: 40px;
   position: fixed;
   height: 100%;
-  width: 300px;
+  width: 20vw;
   background-color: #663d3b;
   color: var(--light-cream);
   animation: slideInFromLeft 0.8s ease-in-out 0.4s backwards;
@@ -417,6 +423,11 @@ iframe {
   flex-direction: column;
   align-items: center;
   animation: fadeIn 1s ease-in-out 0.4s forwards;
+}
+
+.landingTitle p {
+  font-size: 0.8rem;
+  margin-block: 0.5rem;
 }
 
 .icon {
@@ -476,7 +487,7 @@ iframe {
 
 .orange-text {
   color: var(--primary-color);
-  padding-left: 1rem;
+  padding-inline: 1rem;
 }
 
 .search-bar {

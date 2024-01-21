@@ -21,7 +21,18 @@ const Landing = () => {
       <div id="background">
         <img id="backgroundImg"/>
         <div className="titleSection">
-          <LandingTitle title="Find your" orangeTitle="space." desc="Find study spaces from the comfort of your home." />
+          <div className="landingTitle">
+            <span>
+              <h1>Studying is</h1>
+              <h1 className="orange-text">hard enough.</h1>
+            </span>
+            <span>
+              <h1>Finding a </h1>
+              <h1 className="orange-text">seat</h1>
+              <h1>shouldn't be.</h1>
+            </span>
+            <p>Find a place where you fit in with accessible solutions made simple by IoT.</p>
+          </div>
           <SearchBar query="Where would you like to study today?" onClickPath="/main"/>
         </div>
         <div id="mainSection">
