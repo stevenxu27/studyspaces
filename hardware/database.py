@@ -72,6 +72,7 @@ def edit_database(table_id, location, is_full):
     new_values = {
         "$set": {
             "is_full": is_full,  # New value for 'is_full'
+            "last_updated" : now,
             "last_occupied": last_occupied,  # New value for 'last_occupied'
         }
     }
