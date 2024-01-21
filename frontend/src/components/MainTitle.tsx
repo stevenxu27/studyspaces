@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MainTitle(props) {
   return (
-    <div className="landingTitle">
+    <div className="mainTitle">
       <span>
         <h2>{props.title + " "}</h2>
         <h2 className="orange-text">{props.orangeTitle}</h2>
