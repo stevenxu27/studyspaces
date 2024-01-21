@@ -1,10 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import RedirectButton from './RedirectButton.tsx';
 
-export default function NavBar() {
+const NavBar = () => {
+    const navigate = useNavigate();
+  
+    const handleViewBuildingClick = () => {
+      navigate("/");
+    };
     return (
         <nav>
-            <h3>study.spaces</h3>
+            <RedirectButton path='/' text="study.spaces"/>
             <button>Sign in</button>
         </nav>
     );
 }
+
+export default NavBar;
