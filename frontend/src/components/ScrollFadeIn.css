@@ -1,0 +1,14 @@
+.landingTitle {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(100px); /* Initial y offset */
+  transition: opacity 1s, transform 1s;
+}
+
+.landingTitle.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
