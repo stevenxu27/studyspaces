@@ -184,6 +184,11 @@ footer {
   border-radius: 30px;
   display: flex;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.listingComponent:hover {
+  transform: scale(1.2);
 }
 
 .listingDesc {
@@ -306,9 +311,11 @@ footer {
   border-radius: 100px;
   box-shadow: 0 20px 15px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.8s ease-in-out 1s forwards;
+  transition: transform 0.3s ease-in-out;
 }
 
 .search-bar:hover {
+  transform: scale(1.1);
   cursor: text;
   background-color: var(--dark-cream);
   color: #ff6f22;
@@ -335,6 +342,11 @@ footer {
   overflow: hidden;
   flex-direction: column;
   box-shadow: 0 20px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease-in-out;
+}
+
+.studySpaceContainer:hover {
+  transform: scale(1.1);
 }
 
 .studySpaceContainer div {
