@@ -13,6 +13,7 @@ const SideBar = () => {
             <SavedSpotComponent name="Irving K Barber" distance="200m"/>
             <SavedSpotComponent name="Irving K Barber" distance="700m"/>
             <SavedSpotComponent name="Irving K Barber" distance="100m"/>
+            <button id="settings">Settings</button>
         </div>
     );
 };

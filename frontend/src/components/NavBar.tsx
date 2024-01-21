@@ -10,7 +10,7 @@ const NavBar = () => {
     };
     return (
         <nav>
-            <RedirectButton path='/' text="study.spaces" type="home" />
+            <RedirectButton path='/' text="StudyScout" type="home" />
             <RedirectButton text="Sign in" type="login"/>
         </nav>
     );

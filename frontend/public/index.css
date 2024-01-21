@@ -1,3 +1,5 @@
+@import "~leaflet/dist/leaflet.css";
+
 :root {
   --primary-color: #ff6f22;
   --secondary-color: #663d3b;
@@ -8,6 +10,7 @@
 }
 
 body {
+  background-color: var(--background-color);
   margin: 0;
 }
 
@@ -50,6 +53,7 @@ span {
 }
 
 span p {
+  font-size: 0.8rem;
   margin: 0;
 }
 
@@ -62,6 +66,7 @@ button {
   padding: 16px;
   border: none;
   border-radius: 100px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
@@ -89,11 +94,10 @@ nav {
 }
 
 #background {
+  position: relative;
   background-color: var(--background-color);
-  background-image: url("./images/landing/buildings.png");
-  background-size: cover;
-  background-position: center;
   height: 100vh;
+  z-index: 0;
 }
 
 .titleSection {
@@ -119,6 +123,12 @@ footer {
   overflow: hidden;
 }
 
+#map {
+  max-height: 600px;
+  width: 200px;
+  overflow: hidden;
+}
+
 #mainSpacesContainer {
   display: flex;
   margin-bottom: 40px;
@@ -128,9 +138,108 @@ footer {
   max-width: 70vw;
 }
 
+iframe {
+  position: absolute;
+  width: 360px;
+  height: 500px;
+  border: 0;
+  top: 160px;
+  right: 40px;
+  animation: slideInFromRight 0.8s ease-in-out 1.4s backwards;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+#mappedInEmbed span {
+  background: linear-gradient(
+    to bottom,
+    rgb(102, 61, 59),
+    rgba(102, 61, 59, 0)
+  );
+  opacity: 1;
+}
+
+.darkShade {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(102, 61, 59),
+    rgba(102, 61, 59, 0)
+  );
+  opacity: 1;
+  z-index: 0;
+}
+
+#infoContainer {
+  position: relative;
+  top: 400px;
+  background-color: #fffcfa;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 840px;
+  border-radius: 30px;
+  border: 0;
+  height: 600px;
+}
+
+#infoContainer h4 {
+  margin-block: 16px;
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.partyImg {
+  margin-left: -10px;
+  width: 100%;
+}
+
+.backIcon {
+  margin-left: 40px;
+  width: 20px;
+  height: 20px;
+}
+
+.locationDesc .icon {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.infoContainerRight {
+  margin-top: 40px;
+  width: 360px;
+  height: 500px;
+}
+
+.infoContainerLeft {
+  margin-top: 40px;
+  width: 320px;
+  height: 500px;
+}
+.infoContainerLeftImg {
+  position: relative;
+  width: 100%;
+  border-radius: 30px;
+  height: 250px;
+  z-index: 1;
+}
+
+.infoContainerBottomSection {
+  position: relative;
+  border-radius: 30px;
+  width: 100%;
+  height: 400px;
+  top: -80px;
+  z-index: 2;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
 #middleSection {
   opacity: 0;
   display: flex;
+  height: fit-content;
   justify-content: center;
   justify-self: center;
   margin-left: 300px;
@@ -165,7 +274,19 @@ footer {
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
 }
 
+#backgroundImg {
+  position: fixed;
+  background-image: url("./images/landing/buildings.png");
+  background-size: cover;
+  background-position: center bottom;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+}
+
 #listingContainer {
+  padding-right: 20px;
+  margin-bottom: 100px;
   opacity: 0;
   position: absolute;
   top: 180px;
@@ -173,7 +294,7 @@ footer {
   justify-self: center;
   max-width: 700px;
   flex-direction: column;
-  background-color: #faf3ee;
+  background-color: #fffcfa;
   border-radius: 30px;
   animation: fadeIn 1s ease-in-out 1.8s forwards;
 }
@@ -191,13 +312,24 @@ footer {
 }
 
 .listingDesc {
-  color: #2c1514;
+  color: var(--secondary-color);
 }
 
-.listingDesc span {
+.locationDesc {
+  display: flex;
+  height: auto;
   align-items: center;
   gap: 6px;
-  color: #ff6f22;
+  color: var(--primary-color);
+}
+
+.locationDesc .icon {
+  margin-left: 0;
+}
+
+.locationDesc h6 {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 .listingDesc h6 {
@@ -208,15 +340,16 @@ footer {
   font-size: 0.8rem;
 }
 
-.listingComponent img {
-  width: 300px;
+.listingComponentImg {
+  min-width: 300px;
   height: 200px;
   border-radius: 30px;
+  object-fit: cover;
   padding: 20px;
 }
 
 .listingComponent .icon {
-  width: 24px;
+  min-width: 24px;
   height: 24px;
   padding: 0;
 }
@@ -251,16 +384,26 @@ footer {
   animation: slideInFromLeft 0.8s ease-in-out 0.4s backwards;
   box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
 }
+
+#settings {
+  width: 100%;
+  position: absolute;
+  bottom: 90px;
+  border-radius: 0;
+}
 #sideBar p {
   align-self: flex-start;
+  font-size: 0.8rem;
   margin-inline: 2rem;
+  margin-bottom: 0.5rem;
   opacity: 0.87;
 }
 #sideBar h6 {
-  margin: 1rem;
+  margin: 0.8rem;
 }
 
 .landingTitle {
+  margin-top: 100px;
   opacity: 0;
   margin-bottom: 20px;
   display: flex;
@@ -272,6 +415,40 @@ footer {
 .icon {
   width: 20px;
   height: 20px;
+}
+
+#mainFloor {
+  background-color: #fffcfa;
+  margin-top: 30px;
+  width: 840px;
+  height: 100vh;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  margin-left: 300px;
+  margin-right: 400px;
+  padding-bottom: 40px;
+  animation: fadeIn 1s ease-in-out 0.8s forwards;
+}
+
+.mainSpan {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 840px;
+  height: 60px;
+}
+
+.mainSpan .icon {
+  z-index: 1;
+  padding-inline: 20px;
+}
+
+.mainSpan h4 {
+  color: #fffcfa;
+  z-index: 1;
 }
 
 .mainTitle {
@@ -333,6 +510,7 @@ footer {
 }
 
 .studySpaceContainer {
+  background-color: #faf3ee;
   z-index: 1;
   display: flex;
   border-radius: 30px;
@@ -377,7 +555,7 @@ footer {
   z-index: 0;
   position: absolute;
   right: 0px;
-  top: 800px;
+  top: 600px;
 }
 
 .locPathBottom {
@@ -425,14 +603,25 @@ footer {
 
 .savedSpot span {
   color: #ff6f22;
+  margin: 0;
 }
 .savedSpot h6 {
   margin: 0;
+  font-weight: 300;
   font-size: 0.8rem;
 }
 
 .savedSpot img {
   align-self: center;
+}
+
+.infoDescription p {
+  color: #663d3b;
+  margin-top: 12px;
+}
+
+.infoDescription h4 {
+  margin-top: 6px;
 }
 
 @keyframes fadeIn {
