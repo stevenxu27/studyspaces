@@ -151,13 +151,13 @@ footer {
 }
 
 #chatBar {
-  height: 100vh;
+  height: 95vh;
   top: 40px;
-  right: 0;
+  right: 0px;
   position: fixed;
   background-color: #663d3b;
   color: var(--light-cream);
-  animation: slideInFromLeft 0.8s ease-in-out 0.4s forwards;
+  animation: slideInFromRight 0.8s ease-in-out 1.2s backwards;
   box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -236,7 +236,7 @@ footer {
   width: 300px;
   background-color: #663d3b;
   color: var(--light-cream);
-  animation: slideInFromLeft 0.8s ease-in-out 0.4s forwards;
+  animation: slideInFromLeft 0.8s ease-in-out 0.4s backwards;
   box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
 }
 #sideBar p {
@@ -441,6 +441,15 @@ footer {
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(400px);
   }
   to {
     transform: translateY(0);
