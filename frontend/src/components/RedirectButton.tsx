@@ -13,6 +13,7 @@ const RedirectButton = (props) => {
         backgroundColor: props.type === 'home' ? 'transparent' : '',
         marginRight: props.type === 'login' ? '20px' : '0',
         paddingInline: props.type === 'login' ? '30px' : '',
+        paddingBlock: props.type === 'login' ? '10px' : '',
       };
 
       return (
