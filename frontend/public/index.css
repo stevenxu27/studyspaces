@@ -162,7 +162,7 @@ footer {
   position: fixed;
   background-color: #663d3b;
   color: var(--light-cream);
-  animation: slideInFromRight 0.8s ease-in-out 1.2s backwards;
+  animation: slideInFromRight 0.8s ease-in-out 1.4s backwards;
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -311,11 +311,9 @@ footer {
   border-radius: 100px;
   box-shadow: 0 20px 15px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.8s ease-in-out 1s forwards;
-  transition: transform 0.3s ease-in-out;
 }
 
 .search-bar:hover {
-  transform: scale(1.1);
   cursor: text;
   background-color: var(--dark-cream);
   color: #ff6f22;
