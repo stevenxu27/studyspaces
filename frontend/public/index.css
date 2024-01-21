@@ -49,6 +49,10 @@ span {
   display: inline-flex;
 }
 
+span p {
+  margin: 0;
+}
+
 button {
   background-color: #ff6f22;
   color: #fffcfa;
@@ -121,11 +125,24 @@ footer {
 }
 
 #sideBar {
-  top: 0;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 40px;
   position: fixed;
   height: 100%;
   width: 300px;
   background-color: #663d3b;
+  color: var(--light-cream);
+}
+#sideBar p {
+  align-self: flex-start;
+  margin-inline: 2rem;
+  opacity: 0.87;
+}
+#sideBar h6 {
+  margin: 1rem;
 }
 
 .landingTitle {
@@ -135,6 +152,11 @@ footer {
   flex-direction: column;
   align-items: center;
   animation: fadeIn 1s ease-in-out 0.4s forwards;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 .mainTitle {
@@ -251,6 +273,37 @@ footer {
 
 .homeName {
   background-color: transparent;
+}
+
+#profilePicture {
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  background-image: url("./images/viewBuildings/RW_Kel_Neutral_29.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px;
+  stroke: none;
+  border: transparent;
+}
+
+.savedSpot {
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  border-top: 1px solid rgba(41, 18, 3, 0.5);
+}
+
+.savedSpot span {
+  color: #ff6f22;
+}
+.savedSpot h6 {
+  margin: 0;
+}
+
+.savedSpot img {
+  align-self: center;
 }
 
 @keyframes fadeIn {

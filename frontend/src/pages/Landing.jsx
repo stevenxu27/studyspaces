@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import LandingTitle from './components/LandingTitle.tsx';
-import NavBar from './components/NavBar.tsx';
-import SearchBar from './components/SearchBar.tsx';
-import MainTitle from './components/MainTitle.tsx';
-import MainStudySpace from './components/MainStudySpace.tsx';
-import ScrollFadeIn from './components/ScrollFadeIn.tsx';
+import LandingTitle from '../components/LandingTitle.tsx';
+import NavBar from '../components/NavBar.tsx';
+import SearchBar from '../components/SearchBar.tsx';
+import MainTitle from '../components/MainTitle.tsx';
+import MainStudySpace from '../components/MainStudySpace.tsx';
+import ScrollFadeIn from '../components/ScrollFadeIn.tsx';
 
 const Landing = () => {
   const navigate = useNavigate();

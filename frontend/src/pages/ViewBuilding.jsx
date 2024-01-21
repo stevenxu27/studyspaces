@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from './components/NavBar.tsx';
-import SideBar from './components/SideBar.tsx';
+import NavBar from '../components/NavBar.tsx';
+import SideBar from '../components/SideBar.tsx';
 
 
 export default function ViewBuilding() {

@@ -1,12 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import SavedSpotComponent from './SavedSpotComponent.tsx';
 
 const SideBar = () => {
     return (
         <div id="sideBar">
             <img id="profilePicture"/>
-            <p>John Wick</p>
-            <h6>Saved spots</h6>
+            <h6>Kel</h6>
+            <p>Saved spots</p>
+            <SavedSpotComponent name="Irvking b asd" distance="gadsdf"/>
+            <SavedSpotComponent name="Irvking b asd" distance="gadsdf"/>
         </div>
     );
 };

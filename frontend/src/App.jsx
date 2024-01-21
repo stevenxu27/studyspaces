@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './Landing'; // Import your components
-import ViewBuilding from './ViewBuilding';
+import Landing from './pages/Landing'; // Import your components
+import ViewBuilding from './pages/ViewBuilding';
 // import Contact from './Contact';
 
 function App() {
