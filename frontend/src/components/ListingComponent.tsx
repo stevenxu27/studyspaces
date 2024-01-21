@@ -12,7 +12,7 @@ export default function ListingComponent() {
             <h4>Irving K Barber Building</h4>
             <p>The Irving K. Barber Learning Centre is a facility at the Vancouver campus of the University of British Columbia. The learning centre...</p>
             <button className="listingButton">
-                <h6>Book now</h6>
+                <h6>Check availability</h6>
                 <img className="icon" src="./images/arrow-right-svgrepo-com.svg"/>
             </button>
         </div>
