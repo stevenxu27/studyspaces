@@ -10,6 +10,11 @@ export default function MainFloor() {
         </span>
       </div>
       <div id="infoContainer">
+        <div className="infoContainerLeft">
+          <img className="infoContainerLeftImg"/>
+          <img className="infoContainerBottomSection" src=""/>
+        </div>
+        
         </div>
     </div>
   );
