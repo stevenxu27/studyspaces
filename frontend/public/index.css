@@ -7,13 +7,6 @@
   --dark-cream: #faf3ee;
 }
 
-h1 {
-  color: var(--dark-color);
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  font-size: 4rem;
-}
-
 h2,
 h3,
 h4,
@@ -23,8 +16,22 @@ h6 {
   margin: 0;
 }
 
+h1 {
+  color: var(--dark-color);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 4rem;
+}
+
 h2 {
   font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.2rem;
 }
 
 p {
@@ -124,4 +131,12 @@ nav {
 }
 
 .studySpaceContainer {
+  display: flex;
+  flex-direction: column;
+  width: 24vw;
+  height: 24vw;
+}
+
+.studySpaceContainer div {
+  margin: 0.5rem;
 }

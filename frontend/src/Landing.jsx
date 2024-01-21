@@ -17,9 +17,10 @@ export default function Landing() {
             <div id="mainSection">
                 <MainTitle title="Popular" orangeTitle="study spaces" endTitle="near you:" desc="View the most popular study spaces and make it convenient."/>
                 <div id="mainSpacesContainer">
-                    <MainStudySpace/>
-                    <MainStudySpace/>
-                    <MainStudySpace/>
+                    <MainStudySpace img="../images/UBC_Irving_5-scaled.jpg" name="Irving K Barber Building" desc="The Irving K Barber Learning Centre provides a world-class facility for students and community members to study and collaborate."/>
+                    <MainStudySpace img="../images/UBC_Irving_5-scaled.jpg" name="Irving K Barber Building" desc="The Irving K Barber Learning Centre provides a world-class facility for students and community members to study and collaborate."/>
+                    <MainStudySpace img="../images/UBC_Irving_5-scaled.jpg" name="Irving K Barber Building" desc="The Irving K Barber Learning Centre provides a world-class facility for students and community members to study and collaborate."/>
+                    
                 </div>
             </div>
             
