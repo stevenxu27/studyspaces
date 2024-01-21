@@ -124,6 +124,35 @@ footer {
   max-width: 70vw;
 }
 
+#middleSection {
+  margin-left: 300px;
+  color: var(--light-cream);
+  min-width: 600px;
+  max-width: 800px;
+  background-color: var(--dark-color);
+  padding-bottom: 40px;
+}
+
+#middleSection .mainTitle {
+  margin-top: 0;
+  padding-top: 80px;
+}
+
+#listingContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #faf3ee;
+}
+
+.listingComponent {
+  display: flex;
+}
+
+.listingComponent img {
+  width: 100px;
+  height: 100px;
+}
+
 #sideBar {
   padding-top: 50px;
   display: flex;
@@ -135,6 +164,7 @@ footer {
   width: 300px;
   background-color: #663d3b;
   color: var(--light-cream);
+  animation: slideInFromLeft 0.8s ease-in-out 0.4s forwards;
 }
 #sideBar p {
   align-self: flex-start;
@@ -332,5 +362,14 @@ footer {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
