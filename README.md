@@ -31,18 +31,13 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-To run our project, clone into your own repository, then run npm install and npm run dev. The website can be visualized on http://localhost:3000/.
+To run our project, clone into your own repository, then run npm install and npm run dev. The website can be visualized at http://localhost:3000/.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+For usage, our device tracks user motion to determine if a desk is occupied or not. The data is stored in our database (MongoDB) which is updated in real-time to our webpage. Users can then see which spaces are open as plan accordingly for their study times. 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
     ```
-
 ## Credits
 
 stevenxu27
