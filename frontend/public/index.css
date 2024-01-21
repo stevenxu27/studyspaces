@@ -87,7 +87,10 @@ nav {
 
 #mainSpacesContainer {
   display: flex;
+  align-self: center;
   justify-content: center;
+  width: 80vw;
+  gap: 20px;
 }
 
 .landingTitle {
@@ -132,9 +135,10 @@ nav {
 
 .studySpaceContainer {
   display: flex;
+  border-radius: 30px;
+  overflow: hidden;
   flex-direction: column;
-  width: 24vw;
-  height: 24vw;
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.25);
 }
 
 .studySpaceContainer div {
