@@ -21,7 +21,7 @@ const Landing = () => {
       <div id="background">
         <div className="titleSection">
           <LandingTitle title="Find your" orangeTitle="space." desc="Find study spaces from the comfort of your home." />
-          <SearchBar query="Where would you like to study today?" onClickPath="/view-building"/>
+          <SearchBar query="Where would you like to study today?" onClickPath="/main"/>
         </div>
         <div id="mainSection">
           <MainTitle title="Popular" orangeTitle="study spaces" endTitle="near you:" desc="View the most popular study spaces and make it convenient." />

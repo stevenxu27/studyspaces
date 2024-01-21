@@ -1,4 +1,5 @@
 import React from 'react';
+import RedirectButton from './RedirectButton.tsx';
 
 export default function MainStudySpace(props) {
   return (
@@ -8,7 +9,7 @@ export default function MainStudySpace(props) {
             <h4>{props.name}</h4>
             <p>{props.desc}</p>
         </div>
-        <button className="orange-button">Go</button>
+        <RedirectButton path='/view-building' text="Go"/>
     </div>
   );
 }
