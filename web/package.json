@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@mappedin/mappedin-js": "^5.26.0",
     "concurrently": "^7.0.0"
   }
 }

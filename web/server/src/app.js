@@ -1,7 +1,7 @@
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const express = require('express'); // import the library
-const sleepRouter = require('./routes/sleepRoutes'); // import the router module
+const spacesRouter = require('./routes/spacesRoutes'); // import the router module
 const cors = require('cors');
 
 const app = express(); // create the express object
@@ -18,6 +18,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use('/sleeps', sleepRouter); // load the router module
+app.use('/tables', spacesRouter); // load the router module
 
 module.exports = app

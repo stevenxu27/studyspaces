@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TELUS_LOGO from "./assets/TELUS_LOGO.svg";
 
-// import DataTable from "./components/DataTable";
 import Form from "./components/Form";
 import Grid from "./components/Grid";
 
@@ -10,9 +9,6 @@ import "./App.css";
 import { createSleep, deleteSleep, getSleeps } from "./services/sleepService";
 
 const App = () => {
-
-  
-
   const [sleepData, setSleepData] = useState([]);
   const [newEntry, setNewEntry] = useState({ day: "", hours: "", score: "" });
 
