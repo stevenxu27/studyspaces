@@ -49,7 +49,14 @@ span {
   display: inline-flex;
 }
 
+span p {
+  margin: 0;
+}
+
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ff6f22;
   color: #fffcfa;
   padding: 16px;
@@ -59,6 +66,7 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   background-color: var(--dark-color);
   color: #ff6f22;
 }
@@ -69,7 +77,9 @@ button:hover {
 }
 
 nav {
-  position: sticky;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
   background-color: #2c1514;
   color: var(--light-cream);
   display: flex;
@@ -117,6 +127,140 @@ footer {
   max-width: 70vw;
 }
 
+#middleSection {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  margin-left: 240px;
+  color: var(--light-cream);
+  min-width: 700px;
+  max-width: 900px;
+  background-color: var(--secondary-color);
+  padding-bottom: 40px;
+  animation: fadeIn 1s ease-in-out 0.8s forwards;
+}
+
+#middleSection .mainTitle {
+  margin-top: 0;
+  margin-bottom: 80px;
+  padding-top: 80px;
+}
+
+#middleSection .mainTitle h2 {
+  font-size: 2rem;
+}
+#middleSection .mainTitle p {
+  font-weight: 300;
+  font-size: 0.8rem;
+  opacity: 0.87;
+}
+
+#chatBar {
+  height: 95vh;
+  top: 40px;
+  right: 0px;
+  position: fixed;
+  background-color: #663d3b;
+  color: var(--light-cream);
+  animation: slideInFromRight 0.8s ease-in-out 1.4s backwards;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#listingContainer {
+  opacity: 0;
+  position: absolute;
+  top: 180px;
+  display: flex;
+  justify-self: center;
+  max-width: 700px;
+  flex-direction: column;
+  background-color: #faf3ee;
+  border-radius: 30px;
+  animation: fadeIn 1s ease-in-out 1.8s forwards;
+}
+
+.listingComponent {
+  background-color: #fffcfa;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.listingComponent:hover {
+  transform: scale(1.2);
+}
+
+.listingDesc {
+  color: #2c1514;
+}
+
+.listingDesc span {
+  align-items: center;
+  gap: 6px;
+  color: #ff6f22;
+}
+
+.listingDesc h6 {
+  font-size: 0.8rem;
+}
+
+.listingDesc p {
+  font-size: 0.8rem;
+}
+
+.listingComponent img {
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.listingComponent .icon {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+.listingButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+}
+.listingButton h6 {
+  padding-left: 24px;
+}
+.listingButton .icon {
+  width: 26px;
+  height: 26px;
+  padding-right: 12px;
+}
+
+#sideBar {
+  z-index: 50;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 40px;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: #663d3b;
+  color: var(--light-cream);
+  animation: slideInFromLeft 0.8s ease-in-out 0.4s backwards;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
+}
+#sideBar p {
+  align-self: flex-start;
+  margin-inline: 2rem;
+  opacity: 0.87;
+}
+#sideBar h6 {
+  margin: 1rem;
+}
+
 .landingTitle {
   opacity: 0;
   margin-bottom: 20px;
@@ -126,12 +270,25 @@ footer {
   animation: fadeIn 1s ease-in-out 0.4s forwards;
 }
 
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
 .mainTitle {
   margin-top: 40px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.leftAlignTitle {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .orange-text {
@@ -149,11 +306,17 @@ footer {
   color: #9e9e9e;
   text-align: left;
   text-indent: 26px;
-  width: 600px;
+  width: 660px;
   border: none;
   border-radius: 100px;
   box-shadow: 0 20px 15px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.8s ease-in-out 1s forwards;
+}
+
+.search-bar:hover {
+  cursor: text;
+  background-color: var(--dark-cream);
+  color: #ff6f22;
 }
 
 .search-button {
@@ -177,6 +340,11 @@ footer {
   overflow: hidden;
   flex-direction: column;
   box-shadow: 0 20px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease-in-out;
+}
+
+.studySpaceContainer:hover {
+  transform: scale(1.1);
 }
 
 .studySpaceContainer div {
@@ -232,6 +400,40 @@ footer {
   margin-left: 100px;
 }
 
+.homeName {
+  background-color: transparent;
+}
+
+#profilePicture {
+  background-color: #2c1514;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.savedSpot {
+  width: 85%;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  border-top: 1px solid rgba(41, 18, 3, 0.5);
+}
+
+.savedSpot span {
+  color: #ff6f22;
+}
+.savedSpot h6 {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.savedSpot img {
+  align-self: center;
+}
+
 @keyframes fadeIn {
   from {
     transform: translateY(-60px);
@@ -251,5 +453,23 @@ footer {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
