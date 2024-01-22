@@ -7,7 +7,7 @@ https://www.studyscout.tech/
 
 
 The problem we decided to address was the inefficient student search time for study spaces, especially during busy periods. We wanted to help students find open study areas without wasting 
-significant preparation time. There have been too many where we were looking for a study spot and spent more time searching for the ideal spot as opposed to studying. 
+significant preparation time. In addition, this application can be used for any general space availability tracking needs. 
 
 Tracks study space openings through motion tracking sensors connected under the tables and desks. Through tracking of black and white images, 
 Studyscout can effectively determine if a study space is open without infringing on user privacy or convenience. The data is connected through webpages 
@@ -15,12 +15,10 @@ for students to determine which spaces are open, what areas are most popular, an
 to optimize their spacing arrangement better and create a significantly more efficient search strategy for students in times of need. 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-We utilized MongoDB, MappedIn, Figma, 
+We utilized MongoDB, MappedIn SDK, Figma, Vercel, and Next.js. Languages we utilized included Javascript/Typescript, Python, HTML/CSS and git. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+One of our biggest troubleshooting errors at first was starting to connect the database. We followed a Telus database tutorial to first connect with MongoDB. Our front-end developer had not used React very much,
+so she struggled initially but created an amazing webpage in the end. We ran into some type issues when transferring our React libraries over to Next.js, leading to an unsolvable "resize" error. Our final struggles was just finalizing deployment for presentation. 
 
 ## Table of Contents (Optional)
 
@@ -33,11 +31,11 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-To run our project, clone into your own repository, then run npm install and npm run dev. The website can be visualized at http://localhost:3000/.
+To run our project, clone into your repository, then run npm install and npm run dev. The website can be visualized at http://localhost:3000/. We currently host at the domain studyscout.tech. 
 
 ## Usage
 
-For usage, our device tracks user motion to determine if a desk is occupied or not. The data is stored in our database (MongoDB) which is updated in real-time to our webpage. Users can then see which spaces are open as plan accordingly for their study times. 
+For usage, our device tracks user motion to determine if a desk is occupied or not. The data is stored in our database (MongoDB) which is updated in real-time to our webpage. Users can then see which spaces are open and plan accordingly for their study times. You can link with your own databases in MongoDB if needed. 
 
     ```
 ## Credits
