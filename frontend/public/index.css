@@ -200,7 +200,7 @@ iframe {
   display: flex;
   justify-content: center;
   gap: 40px;
-  width: 840px;
+  width: 55vw;
   border-radius: 30px;
   border: 0;
   height: 800px;
@@ -266,8 +266,7 @@ iframe {
   height: fit-content;
   justify-content: center;
   justify-self: center;
-  margin-left: 300px;
-  margin-right: 410px;
+  margin-left: 20vw;
   padding-bottom: 40px;
   animation: fadeIn 1s ease-in-out 0.8s forwards;
 }
@@ -293,7 +292,7 @@ iframe {
 
 #chatBar {
   height: 95%;
-  width: 25vw;
+  width: 27vw;
   top: 55px;
   right: 0px;
   position: fixed;
@@ -462,15 +461,14 @@ iframe {
 #mainFloor {
   background-color: #fffcfa;
   margin-top: 60px;
-  width: 840px;
+  width: 55vw;
   height: 100vh;
   opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-self: center;
-  margin-left: 300px;
-  margin-right: 400px;
+  margin-left: 20vw;
   padding-bottom: 40px;
   animation: fadeIn 1s ease-in-out 0.8s forwards;
 }
@@ -479,7 +477,7 @@ iframe {
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 840px;
+  width: 55vw;
   height: 60px;
 }
 
