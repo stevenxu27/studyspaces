@@ -3,8 +3,7 @@
 ## Description
 
 https://www.studyscout.tech/
-studyscout-git-main-rayleishen.vercel.app
-studyscout-azmjjq6ou-rayleishen.vercel.app
+// https://studyspaces-sand.vercel.app/
 
 
 The problem we decided to address was the inefficient student search time for study spaces, especially during busy periods. We wanted to help students find open study areas without wasting 
